@@ -1,0 +1,9 @@
+@mixin flex-center {
+    display: flex; display: -webkit-flex;display: -webkit-flex;display: -ms-flexbox;flex-wrap: wrap;  height: 100vh; align-items: center;
+}
+
+header{
+    @include flex-center(); justify-content: center;background: rgba(217, 214, 214, 0.5); margin-bottom: 1em;
+    h1{color: rgb(236, 79, 79); text-align: center;}
+    
+}

@@ -1,0 +1,33 @@
+
+@import 'variables';
+
+*{margin:0;padding:0;text-decoration:none;list-style:none;outline:none;border:none;}
+*, *:before, *:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+body, html{width:100%;min-width:320px;overflow-x: hidden}
+body{margin:0;padding:0;font-family: 'Julius Sans One', sans-serif;background-color:#fff;font-weight:normal;font-size:1em;letter-spacing:0;color:#6b6b6b;min-width:320px;overflow-x: hidden}
+strong {font-weight: bold}
+img{max-width:100%;width:auto;height:auto;}
+.row{width:100%;}
+.wrapper{width:100%; }
+.container{width:94%;margin:0 auto;max-width: 1188px; }
+.cover{width:100%;height:100%;position:fixed;background:rgba(5, 5, 5, 0.9);top:0;left:0;z-index:11;display:none;}
+.cover.act{display: block}
+.cover.active{display: block;z-index: 14;}
+.flex{display: flex; display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;flex-wrap: wrap; justify-content: space-between;  }
+.align-center{align-items: center}
+.justify-center{justify-content: center}
+.align-end{align-self: flex-end}
+.justify-end{justify-content: flex-end}
+.container{ max-width: 1200px; width: 98%; margin: 0 auto;}
+
+@import 'header';
+
+.contact {
+    @include flex-center();
+    button{
+        background: $button-color; padding: .5em 1em; color: $white-text; margin-top: 1em; cursor: pointer;
+        &:hover{
+            background: #7979fa;
+        }
+    }
+}
